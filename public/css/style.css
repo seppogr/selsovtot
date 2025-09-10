@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(7, 87, 24);
+}
+
+a {
+    color: orchid;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    color: aqua;
+}
+
+
+.center {
+    width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-style: italic;
+}
+
+h1 {
+    color: red;
+}
+
+#list {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+
+#list li {
+    margin-top: 10px;
+    font-size: xx-large;
+    color: beige;
+}
