@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <link rel="stylesheet" href="public\css\style.css">
+    <script src="public\js\script.js"></script>
+    <meta charset="UTF-8">
+    <title>Tehtävä 2</title>
+</head>
+
+<body>
+    <nav>
+        <p>
+        <div class="palkki1">
+            <div class="alaotsikko1">
+                <h2>Elementti 1: Perinteinen ja avautuva navigointipalkki</h2>
+            </div><!--alaotsikko päättyy-->
+
+            <div class="palkin-valitsin1">
+                <a href="t1.html">Tehtävä 1</a>
+                <a href="https://www.fotmob.com/" target="_blank">Jalkapallotulokset</a>
+                <a href="https://www.is.fi/" target="_blank">Uusinta uutta</a>
+            </div> <!--palkin-valitsin päättyy-->
+        </div><!--palkki1 päättyy-->
+        </p>
+
+        <p>
+        <div class="palkki">
+            <div class="alaotsikko">
+
+            </div><!--alaotsikko päättyy-->
+
+            <div class="aputeksti"></div>
+            <label for='menu' tabindex="0">
+                MENU
+            </label>
+            <input id='menu' type='checkbox'>
+            <ul>
+                <li>
+                    <div class="palkin-valitsin">
+                        <ul>
+                            <li><a href="t1.html">Tehtävä 1</a></li>
+                            <li><a href="https://www.fotmob.com/" target="_blank">Jalkapallotulokset</a></li>
+                            <li><a href="https://www.is.fi/" target="_blank">Uusinta uutta</a></li>
+                        </ul>
+                    </div> <!--palkin-valitsi päättyy-->
+                </li>
+            </ul>
+        </div><!--palkki päättyy-->
+        </p>
+
+    </nav><!--otsake päättyy. Tänne sijoitettu kaikki navigointipalkkiin ja yläosaan liittyvä toiminnallisuus.-->
+
+    <div class="form">
+        <h2>Elementti 2: Lomake johon annetut tiedot tulostetaan ruudulle.</h2>
+        <form class="form">
+            <p>Mikä on nimesi?</p> <input id="name" required="required" type="text">
+            <p>Mikä on ikäsi?</p> <input id="age" required="required" type="number">
+            <p>
+                <button onclick='getInfo()' type="button" name="commentsubmit">Kerron tietosi!</button>
+            </p>
+            <br>
+        </form>
+
+    </div>
+    <div id="element2">
+        <p></p>
+    </div>
+    <div id="element3">
+        <p>
+        <div id="el3Button">
+            <button id="myBtn" onclick='useModal()'>Avaa Elementti 3 tästä!</button>
+        </div>
+        </p>
+
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div id="closeModal">Sulje</div>
+                <p>Katso <a href="https://www.fotmob.com/" target="_blank">jalkapallotulokset</a>.
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
